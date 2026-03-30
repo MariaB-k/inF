@@ -10,3 +10,18 @@
 ## Как запустить:
 1. Укажите путь к вашему `.fasta` файлу в функции `demo()`.
 2. Запустите скрипт: `python main.py`.
+
+classDiagram
+    class Seq {
+        +String header
+        +String sequence
+        +__init__(header, sequence)
+        +__str__() String
+        +length() int
+        +alphabet() String
+    }
+    class FastaReader {
+        +is_fasta(filename) bool$
+        +read(filename) Generator~Seq~
+    }
+    FastaReader ..> Seq : создает экземпляры
