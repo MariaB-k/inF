@@ -11,7 +11,7 @@
 1. Укажите путь к вашему `.fasta` файлу в функции `demo()`.
 2. Запустите скрипт: `python main.py`.
 
-classDiagram
+'''classDiagram
     class Seq {
         +String header
         +String sequence
@@ -24,4 +24,4 @@ classDiagram
         +is_fasta(filename) bool$
         +read(filename) Generator~Seq~
     }
-    FastaReader ..> Seq : создает экземпляры
+    FastaReader ..> Seq : создает экземпляры'''
